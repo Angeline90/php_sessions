@@ -69,3 +69,9 @@ section.cookies{
     height: 60px;
   }
 }
+
+/* ajuster taille img dans le panier */
+.small-img {
+  width: 150px;
+  height: auto;
+}

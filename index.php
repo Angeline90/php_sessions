@@ -1,3 +1,12 @@
+<?php session_start();
+if (isset($_GET['add_to_cart'])) {
+    $cookieId = $_GET['add_to_cart'];
+    if (isset($_SESSION['cart'][$cookieId])) {
+        $_SESSION['cart'][$cookieId]++;
+    } else {
+        $_SESSION['cart'][$cookieId] = 1;
+    }
+}?>
 <?php require 'inc/data/products.php'; ?>
 <?php require 'inc/head.php'; ?>
 <section class="cookies container-fluid">
