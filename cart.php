@@ -30,5 +30,5 @@
 </section>
 <?php require 'inc/foot.php'; ?>
 
-<!-- destruction session en quittant la page -->
-<?php include 'destroy_session.php'; ?>
+<!-- destruction session en quittant ou en actualisant la page -->
+<?php //include 'destroy_session.php'; ?>
